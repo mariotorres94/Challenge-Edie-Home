@@ -8,11 +8,17 @@
 //     $(this).add('#burguer');
 // });
 
-$('#burguer').on('click', function(){
+$('#burguer').on('click', function () {
     $('#burguer').hide();
-    $('#close').show();
+    if ($(this)) {
+        $('#close').show();
+        $('.navegacion').show();
+    }
 });
-$('#close').on('click', function(){
+$('#close').on('click', function () {
     $('#burguer').show();
-    $('#close').hide();
+    if ($(this)) {
+        $('#close').hide();
+        $('.navegacion').hide();
+    }
 });

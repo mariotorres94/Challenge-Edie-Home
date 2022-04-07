@@ -17,7 +17,12 @@
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-bottom: 48px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  background-color: white;
 }
 
 .header__container .logo {
@@ -50,7 +55,30 @@
 }
 
 .header__container .navegacion {
+  position: relative;
+  top: -50px;
+  right: 0;
+  width: 100%;
   display: none;
+}
+
+.header__container .navegacion ul {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  list-style: none;
+  background-color: #333333;
+  opacity: 0.6;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header__container .navegacion ul li {
+  padding: 15px 320px 15px 15px;
+}
+
+.main__container {
+  margin-top: 96px;
 }
 
 .main__container--text {
